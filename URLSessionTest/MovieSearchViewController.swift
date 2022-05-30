@@ -29,14 +29,17 @@ class MovieSearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // delegate setting
+        // tableview delegate setting
         searchResultTableView.delegate = self
         searchResultTableView.dataSource = self
         
         // cell register
         searchResultTableView.register(UINib(nibName: "MovieSearchTableViewCell", bundle: nil), forCellReuseIdentifier: "MovieSearchTableViewCell")
         
+        // searchbar deleget setting
         searchBar.delegate = self
+        
+        searchResultTableView.rowHeight = 150
     }
     
 }
@@ -51,6 +54,10 @@ extension MovieSearchViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let searchResultCell = tableView.dequeueReusableCell(withIdentifier: "MovieSearchTableViewCell", for: indexPath) as? MovieSearchTableViewCell else {
             return UITableViewCell()
+        }
+        
+        if !movieList.isEmpty {
+            searchResultCell.updateCell(movieList[indexPath.row])
         }
         
         return searchResultCell

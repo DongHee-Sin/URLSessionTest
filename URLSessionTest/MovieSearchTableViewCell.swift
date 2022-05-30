@@ -28,4 +28,19 @@ class MovieSearchTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    
+    func updateCell(_ movieInfo: SearchedMovie) {
+        if let url = URL(string: movieInfo.image) {
+            do {
+                let data = try Data(contentsOf: url)
+                moviePoster.image = UIImage(data: data)
+            }catch {
+                print("이미지 불러오기 실패")
+            }
+        }
+    
+        title.text = movieInfo.title
+        director.text = movieInfo.director
+        actor.text = movieInfo.actor
+    }
 }
