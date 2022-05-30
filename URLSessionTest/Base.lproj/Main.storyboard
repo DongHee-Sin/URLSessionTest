@@ -58,6 +58,43 @@
             </objects>
             <point key="canvasLocation" x="5.7971014492753632" y="525"/>
         </scene>
+        <!--Movie Search View Controller-->
+        <scene sceneID="Juk-Lm-J21">
+            <objects>
+                <viewController storyboardIdentifier="MovieSearchViewController" id="3r6-hD-zSY" customClass="MovieSearchViewController" customModule="URLSessionTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zWC-cU-mCq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="영화 제목 검색..." translatesAutoresizingMaskIntoConstraints="NO" id="vyN-W1-ImN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CZS-iC-laD">
+                                <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wGd-6m-IYe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CZS-iC-laD" firstAttribute="top" secondItem="vyN-W1-ImN" secondAttribute="bottom" id="2iK-pr-Phj"/>
+                            <constraint firstItem="vyN-W1-ImN" firstAttribute="top" secondItem="wGd-6m-IYe" secondAttribute="top" id="3Lt-Ze-Vxr"/>
+                            <constraint firstItem="vyN-W1-ImN" firstAttribute="leading" secondItem="wGd-6m-IYe" secondAttribute="leading" id="95B-ss-j2a"/>
+                            <constraint firstItem="wGd-6m-IYe" firstAttribute="bottom" secondItem="CZS-iC-laD" secondAttribute="bottom" id="LbP-fT-5jG"/>
+                            <constraint firstItem="CZS-iC-laD" firstAttribute="leading" secondItem="wGd-6m-IYe" secondAttribute="leading" id="b9L-aH-4P7"/>
+                            <constraint firstItem="wGd-6m-IYe" firstAttribute="trailing" secondItem="vyN-W1-ImN" secondAttribute="trailing" id="jnf-Et-IIp"/>
+                            <constraint firstItem="wGd-6m-IYe" firstAttribute="trailing" secondItem="CZS-iC-laD" secondAttribute="trailing" id="vVf-UN-S6t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchResultTableView" destination="CZS-iC-laD" id="FTi-2A-hce"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j3I-ox-CTz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="976"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>

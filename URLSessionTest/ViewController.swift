@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     // 하루 전 날자 String으로 변환
-    let currentDate = Date().dayBefore
+    let date = Date().dayBefore
     let dateFormatter = DateFormatter()
 
     
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         dateFormatter.dateFormat = "YYYYMMdd"
         
         // 네트워킹
-        movieManager.fetchMovie(date: dateFormatter.string(from: currentDate)) { (movies) in
+        movieManager.fetchMovie(date: dateFormatter.string(from: date)) { (movies) in
             guard let movies = movies else { return }
             
             self.movieList = movies
