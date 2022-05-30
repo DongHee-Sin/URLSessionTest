@@ -15,16 +15,23 @@ class InitialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     
     @IBAction func didTapBoxofficeButton(_ sender: UIButton) {
-        guard let boxofficeView = storyboard?.instantiateViewController(withIdentifier: "ViewController") else {
+        guard let boxofficeVC = storyboard?.instantiateViewController(withIdentifier: "ViewController") else {
             return
         }
         
-        self.navigationController?.pushViewController(boxofficeView, animated: true)
+        self.navigationController?.pushViewController(boxofficeVC, animated: true)
     }
     
     
+    @IBAction func didTapSearchMovieButton(_ sender: UIButton) {
+        guard let searchMovieVC = storyboard?.instantiateViewController(withIdentifier: "MovieSearchViewController") else {
+            return
+        }
+        
+        self.navigationController?.pushViewController(searchMovieVC, animated: true)
+    }
     
 }

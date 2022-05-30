@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MovieDataManager {
+class MovieDataManager {
     
     let movieURL = "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?"
     

@@ -24,6 +24,9 @@
 		D05476AD2844A82B0037FE45 /* MovieSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05476AC2844A82B0037FE45 /* MovieSearchViewController.swift */; };
 		D05476B02844A97C0037FE45 /* MovieSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05476AF2844A97C0037FE45 /* MovieSearchResponse.swift */; };
 		D05476B32844AB180037FE45 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05476B22844AB180037FE45 /* Secret.swift */; };
+		D0E59B56284504FC005EF895 /* MovieSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E59B54284504FC005EF895 /* MovieSearchTableViewCell.swift */; };
+		D0E59B57284504FC005EF895 /* MovieSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0E59B55284504FC005EF895 /* MovieSearchTableViewCell.xib */; };
+		D0E59B5928450FEC005EF895 /* MovieSearchDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E59B5828450FEC005EF895 /* MovieSearchDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		D05476AC2844A82B0037FE45 /* MovieSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewController.swift; sourceTree = "<group>"; };
 		D05476AF2844A97C0037FE45 /* MovieSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchResponse.swift; sourceTree = "<group>"; };
 		D05476B22844AB180037FE45 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		D0E59B54284504FC005EF895 /* MovieSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchTableViewCell.swift; sourceTree = "<group>"; };
+		D0E59B55284504FC005EF895 /* MovieSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieSearchTableViewCell.xib; sourceTree = "<group>"; };
+		D0E59B5828450FEC005EF895 /* MovieSearchDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D02A928D2844AFEB003A2358 /* 영화 검색 */ = {
+			isa = PBXGroup;
+			children = (
+				D05476AF2844A97C0037FE45 /* MovieSearchResponse.swift */,
+				D0E59B5828450FEC005EF895 /* MovieSearchDataManager.swift */,
+			);
+			name = "영화 검색";
+			sourceTree = "<group>";
+		};
 		D053BD0F283748F500550B96 = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				D05476AE2844A94E0037FE45 /* 박스오피스 */,
-				D05476AF2844A97C0037FE45 /* MovieSearchResponse.swift */,
+				D02A928D2844AFEB003A2358 /* 영화 검색 */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -132,6 +147,7 @@
 		D053BD3328374A7400550B96 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				D0E59B53284504DF005EF895 /* 영화검색 */,
 				D05476AB2844A6BD0037FE45 /* 박스오피스 */,
 			);
 			name = TableViewCell;
@@ -186,6 +202,15 @@
 				D05476B22844AB180037FE45 /* Secret.swift */,
 			);
 			name = Secret;
+			sourceTree = "<group>";
+		};
+		D0E59B53284504DF005EF895 /* 영화검색 */ = {
+			isa = PBXGroup;
+			children = (
+				D0E59B54284504FC005EF895 /* MovieSearchTableViewCell.swift */,
+				D0E59B55284504FC005EF895 /* MovieSearchTableViewCell.xib */,
+			);
+			name = "영화검색";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +275,7 @@
 				D053BD3C28374B0900550B96 /* MovieTableViewHeader.xib in Resources */,
 				D053BD25283748F600550B96 /* Assets.xcassets in Resources */,
 				D053BD3728374A9400550B96 /* MovieTableViewCell.xib in Resources */,
+				D0E59B57284504FC005EF895 /* MovieSearchTableViewCell.xib in Resources */,
 				D053BD23283748F500550B96 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D053BD3A28374ADB00550B96 /* MovieTableViewHeader.swift in Sources */,
+				D0E59B56284504FC005EF895 /* MovieSearchTableViewCell.swift in Sources */,
 				D05476B32844AB180037FE45 /* Secret.swift in Sources */,
 				D053BD20283748F500550B96 /* ViewController.swift in Sources */,
 				D053BD1C283748F500550B96 /* AppDelegate.swift in Sources */,
@@ -272,6 +299,7 @@
 				D053BD4028374D8900550B96 /* MovieDataManager.swift in Sources */,
 				D05476B02844A97C0037FE45 /* MovieSearchResponse.swift in Sources */,
 				D053BD3628374A9400550B96 /* MovieTableViewCell.swift in Sources */,
+				D0E59B5928450FEC005EF895 /* MovieSearchDataManager.swift in Sources */,
 				D053BD1E283748F500550B96 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
