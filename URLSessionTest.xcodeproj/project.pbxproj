@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0255DB92844A46600C2F379 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0255DB82844A46600C2F379 /* InitialViewController.swift */; };
 		D053BD1C283748F500550B96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D053BD1B283748F500550B96 /* AppDelegate.swift */; };
 		D053BD1E283748F500550B96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D053BD1D283748F500550B96 /* SceneDelegate.swift */; };
 		D053BD20283748F500550B96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D053BD1F283748F500550B96 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0255DB82844A46600C2F379 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		D053BD18283748F500550B96 /* URLSessionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLSessionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D053BD1B283748F500550B96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D053BD1D283748F500550B96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		D053BD302837498700550B96 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D0255DB82844A46600C2F379 /* InitialViewController.swift */,
 				D053BD1F283748F500550B96 /* ViewController.swift */,
 				D053BD3828374ABC00550B96 /* TableViewHeader */,
 				D053BD3328374A7400550B96 /* TableViewCell */,
@@ -121,8 +124,7 @@
 		D053BD3328374A7400550B96 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				D053BD3428374A9400550B96 /* MovieTableViewCell.swift */,
-				D053BD3528374A9400550B96 /* MovieTableViewCell.xib */,
+				D05476AB2844A6BD0037FE45 /* 박스오피스 */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -130,8 +132,7 @@
 		D053BD3828374ABC00550B96 /* TableViewHeader */ = {
 			isa = PBXGroup;
 			children = (
-				D053BD3928374ADB00550B96 /* MovieTableViewHeader.swift */,
-				D053BD3B28374B0900550B96 /* MovieTableViewHeader.xib */,
+				D05476AA2844A6B00037FE45 /* 박스오피스 */,
 			);
 			name = TableViewHeader;
 			sourceTree = "<group>";
@@ -142,6 +143,24 @@
 				D053BD422837594700550B96 /* Date.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		D05476AA2844A6B00037FE45 /* 박스오피스 */ = {
+			isa = PBXGroup;
+			children = (
+				D053BD3928374ADB00550B96 /* MovieTableViewHeader.swift */,
+				D053BD3B28374B0900550B96 /* MovieTableViewHeader.xib */,
+			);
+			name = "박스오피스";
+			sourceTree = "<group>";
+		};
+		D05476AB2844A6BD0037FE45 /* 박스오피스 */ = {
+			isa = PBXGroup;
+			children = (
+				D053BD3428374A9400550B96 /* MovieTableViewCell.swift */,
+				D053BD3528374A9400550B96 /* MovieTableViewCell.xib */,
+			);
+			name = "박스오피스";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +239,7 @@
 				D053BD3A28374ADB00550B96 /* MovieTableViewHeader.swift in Sources */,
 				D053BD20283748F500550B96 /* ViewController.swift in Sources */,
 				D053BD1C283748F500550B96 /* AppDelegate.swift in Sources */,
+				D0255DB92844A46600C2F379 /* InitialViewController.swift in Sources */,
 				D053BD432837594700550B96 /* Date.swift in Sources */,
 				D053BD3E28374CEC00550B96 /* MovieResponse.swift in Sources */,
 				D053BD4028374D8900550B96 /* MovieDataManager.swift in Sources */,
