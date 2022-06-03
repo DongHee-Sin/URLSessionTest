@@ -7,11 +7,11 @@
 
 import Foundation
 
-class MovieDataManager {
+final class MovieDataManager {
     
     let movieURL = "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?"
     
-    let myKey = "b4d2c860bdd937f0186339b3082437a1"
+    let myKey = movieKey.movieKey
     
     func fetchMovie(date: String, completion: @escaping ([Movie]?) -> Void) {
         let urlString = "\(movieURL)&key=\(myKey)&targetDt=\(date)"

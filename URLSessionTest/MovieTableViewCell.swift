@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MovieTableViewCell: UITableViewCell {
+final class MovieTableViewCell: UITableViewCell {
 
     // UI 연결
     @IBOutlet weak var rank: UILabel!

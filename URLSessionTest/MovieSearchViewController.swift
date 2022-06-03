@@ -9,7 +9,7 @@ import UIKit
 
 // image, title, director, actor
 
-class MovieSearchViewController: UIViewController {
+final class MovieSearchViewController: UIViewController {
     
     // movie data
     var movieList: [SearchedMovie] = []
@@ -67,6 +67,14 @@ extension MovieSearchViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let movieInfoVC = storyboard?.instantiateViewController(withIdentifier: "MovieInfoViewController") as? MovieInfoViewController else {
+            return
+        }
+        
+        movieInfoVC.movieData = movieList[indexPath.row]
+        self.navigationController?.pushViewController(movieInfoVC, animated: true)
+    }
 }
 
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MovieSearchDataManager {
+final class MovieSearchDataManager {
     
     let searchURL = "https://openapi.naver.com/v1/search/movie.json"
     

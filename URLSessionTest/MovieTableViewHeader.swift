@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MovieTableViewHeader: UITableViewHeaderFooterView {
+final class MovieTableViewHeader: UITableViewHeaderFooterView {
     override func awakeFromNib() {
         super.awakeFromNib()
     }

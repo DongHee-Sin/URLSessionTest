@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MovieSearchTableViewCell: UITableViewCell {
+final class MovieSearchTableViewCell: UITableViewCell {
 
     // UI 연결
     @IBOutlet weak var moviePoster: UIImageView!
@@ -38,7 +38,6 @@ class MovieSearchTableViewCell: UITableViewCell {
                 print("이미지 불러오기 실패")
             }
         }
-        
         
         let tagRemovedTitle: String = movieInfo.title.replacingOccurrences(of: "<b>", with: "").replacingOccurrences(of: "</b>", with: "")
         title.text = tagRemovedTitle

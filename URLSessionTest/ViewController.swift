@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     // 하루 전 날자 String으로 변환
     let date = Date().dayBefore
