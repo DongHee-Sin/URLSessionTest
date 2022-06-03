@@ -47,10 +47,13 @@ class MovieSearchViewController: UIViewController {
 
 // tableview delegate
 extension MovieSearchViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    // cell의 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movieList.count
     }
     
+    // 어떤 셀을 보여줄건지..
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let searchResultCell = tableView.dequeueReusableCell(withIdentifier: "MovieSearchTableViewCell", for: indexPath) as? MovieSearchTableViewCell else {
             return UITableViewCell()
