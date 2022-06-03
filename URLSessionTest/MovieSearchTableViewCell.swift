@@ -38,8 +38,10 @@ class MovieSearchTableViewCell: UITableViewCell {
                 print("이미지 불러오기 실패")
             }
         }
-    
-        title.text = movieInfo.title
+        
+        
+        let tagRemovedTitle: String = movieInfo.title.replacingOccurrences(of: "<b>", with: "").replacingOccurrences(of: "</b>", with: "")
+        title.text = tagRemovedTitle
         director.text = movieInfo.director
         actor.text = movieInfo.actor
     }
